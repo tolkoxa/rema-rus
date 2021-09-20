@@ -23,6 +23,7 @@ body {
   height: 50px; }
 
 .header-flags {
+  display: none;
   width: 35px;
   height: 65px;
   display: flex;
@@ -50,6 +51,10 @@ body {
 
 .menu-active {
   color: #5255f0; }
+
+.menu-inactive {
+  color: grey;
+  disabled: true; }
 
 .menu-link {
   color: #fff;
@@ -212,12 +217,22 @@ body {
     padding-bottom: 20px; }
   .projects-big-img {
     width: 70%; }
-  .projects-imgs {
+  .projects-big-size {
     width: 100%;
+    height: auto; }
+  .projects-imgs {
+    width: 80%;
+    max-width: 700px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: center; }
+    align-items: center;
+    align-content: space-between; }
+  .projects-small-img {
+    width: 50%;
+    height: 50%;
+    max-width: 315px;
+    max-height: 208px; }
   .projects-desc {
     width: 70%; }
   .projects-text {
@@ -228,13 +243,14 @@ body {
 
 .news {
   width: 100%;
-  padding-top: 30px;
+  height: 100%;
+  padding-top: 20px;
   background-image: url("../img/rema-bg.jpg");
   background-repeat: no-repeat;
   background-position: center -300px; }
   .news-items {
     width: 100%;
-    padding-top: 40px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start; }
@@ -359,12 +375,6 @@ body {
   .footer-logo {
     display: block; }
   .footer-link {
-    display: block;
     font-family: "Open Sans", sans-serif;
-    color: #fff;
     font-size: 2rem;
-    font-weight: 400;
-    text-decoration: none; }
-    .footer-link:hover {
-      cursor: pointer;
-      color: #5255f0; }
+    font-weight: 400; }

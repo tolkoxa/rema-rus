@@ -24,14 +24,13 @@ body {
     padding: 20px;
 }
 
-.logo-link {}
-
 .logo-img {
     width: 170px;
     height: 50px;
 }
 
 .header-flags {
+    display: none;
     width: 35px;
     height: 65px;
     display: flex;
@@ -70,6 +69,11 @@ body {
 
 .menu-active {
     color: $color-blue;
+}
+
+.menu-inactive {
+    color: grey;
+    disabled: true;
 }
 
 .menu-link {
@@ -269,12 +273,24 @@ body {
     &-big-img {
         width: 70%;
     }
-    &-imgs {
+    &-big-size {
         width: 100%;
+        height: auto;
+    }
+    &-imgs {
+        width: 80%;
+        max-width: 700px;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: center;
+        align-content: space-between;
+    }
+    &-small-img {
+        width: 50%;
+        height: 50%;
+        max-width: 315px;
+        max-height: 208px;
     }
     &-desc {
         width: 70%;
@@ -289,13 +305,14 @@ body {
 
 .news {
     width: 100%;
-    padding-top: 30px;
+    height: 100%;
+    padding-top: 20px;
     background-image: url('../img/rema-bg.jpg');
     background-repeat: no-repeat;
     background-position: center -300px;
     &-items {
         width: 100%;
-        padding-top: 40px;
+        padding-top: 20px;
         display: flex;
         justify-content: space-evenly;
         align-items: flex-start;
@@ -447,15 +464,15 @@ body {
         display: block;
     }
     &-link {
-        display: block;
+        // display: block;
         font-family: $font-main;
-        color: $color-white;
+        // color: $color-white;
         font-size: 2rem;
         font-weight: 400;
-        text-decoration: none;
-        &:hover {
-            cursor: pointer;
-            color: $color-blue;
-        }
+        // text-decoration: none;
+        // &:hover {
+        //     cursor: pointer;
+        //     color: $color-blue;
+        // }
     }
 }

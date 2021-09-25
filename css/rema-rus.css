@@ -117,6 +117,57 @@ body {
     text-transform: uppercase;
     text-align: center; }
 
+.animation-point {
+  opacity: 0; }
+
+.animation-to-right {
+  width: 100%;
+  animation-duration: 1.5s;
+  animation-name: toright;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+@keyframes toright {
+  from {
+    opacity: 0;
+    margin-left: -100%; }
+  to {
+    margin-left: 0%;
+    opacity: 1; } }
+.animation-to-top {
+  width: 100%;
+  animation-duration: 2s;
+  animation-name: totop;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+@keyframes totop {
+  from {
+    opacity: 0;
+    margin-bottom: -100%; }
+  to {
+    margin-bottom: 0%;
+    opacity: 1; } }
+.animation-to-left {
+  width: 100%;
+  animation-duration: 1.5s;
+  animation-name: toleft;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+@keyframes toleft {
+  from {
+    opacity: 0;
+    margin-right: -100%; }
+  to {
+    margin-right: 0%;
+    opacity: 1; } }
 .products {
   width: 100%;
   padding-top: 30px;

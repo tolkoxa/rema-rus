@@ -90,21 +90,23 @@ body {
     font-family: "Open Sans", sans-serif;
     color: #fff;
     font-size: 2.3rem;
+    line-height: 120%;
     font-weight: 700;
+    padding: 20px 0 10px 0;
     text-transform: uppercase;
     text-align: center; }
   .about-subtitle {
     font-family: "Open Sans", sans-serif;
     color: #fff;
-    font-size: 1.6rem;
-    line-height: 1.3em;
-    font-weight: 700;
-    padding: 10px 0; }
+    font-size: 1.7rem;
+    line-height: 125%;
+    font-weight: 600;
+    padding-bottom: 20px; }
   .about-text {
     font-family: "Open Sans", sans-serif;
     color: #fff;
     font-size: 1.5rem;
-    line-height: 1.25em;
+    line-height: 125%;
     font-weight: 500;
     padding: 10px 0; }
   .about-videos {
@@ -254,7 +256,7 @@ body {
     display: flex;
     padding-bottom: 5px; }
   .projects-big-img {
-    width: 100%; }
+    width: 98%; }
   .projects-big-size {
     width: 100%;
     height: auto; }
@@ -267,8 +269,8 @@ body {
     align-items: center;
     align-content: space-between; }
   .projects-small-img {
-    width: 50%;
-    height: 50%;
+    width: 48%;
+    height: 49%;
     max-width: 315px;
     max-height: 208px; }
   .projects-desc {
@@ -397,7 +399,7 @@ body {
     outline: none !important;
     padding: 5px 0 5px 10px;
     font-family: "Open Sans", sans-serif;
-    color: #1d1d1d;
+    color: #5255f0;
     font-size: 2rem;
     font-weight: 400; }
   .feedback-texarea {
@@ -409,7 +411,7 @@ body {
     outline: none !important;
     padding: 5px 0 5px 10px;
     font-family: "Open Sans", sans-serif;
-    color: #1d1d1d;
+    color: #5255f0;
     font-size: 2rem;
     font-weight: 400; }
   .feedback-button {
@@ -429,6 +431,14 @@ body {
     font-weight: 400; }
     .feedback-btn:hover {
       cursor: pointer; }
+  .feedback-after-send {
+    width: 80%;
+    height: 80px;
+    font-family: "Open Sans", sans-serif;
+    color: #1d1d1d;
+    font-size: 2.8rem;
+    font-weight: 500;
+    padding-top: 20px; }
   .feedback-info {
     width: 80%;
     margin: 0 auto;
@@ -492,6 +502,11 @@ body {
 
   .feedback-text {
     font-size: 1.6rem; }
+  .feedback-after-send {
+    width: 80%;
+    height: 100px;
+    font-size: 2.6rem;
+    font-weight: 500; }
 
   .partners-item {
     margin-bottom: 40px; } }
@@ -511,7 +526,10 @@ body {
   .about {
     flex-wrap: nowrap; }
     .about-title {
+      font-size: 3.3rem;
       text-align: left; }
+    .about-subtitle {
+      font-size: 2.0rem; }
     .about-videos {
       text-align: right; }
 
@@ -521,9 +539,14 @@ body {
   .feedback-info {
     flex-wrap: nowrap;
     justify-content: space-between; }
-
   .feedback-item {
     width: 50%; }
+  .feedback-after-send {
+    width: 80%;
+    height: 150px;
+    font-size: 3rem;
+    font-weight: 500;
+    padding-top: 20px; }
 
   .points {
     display: flex; }

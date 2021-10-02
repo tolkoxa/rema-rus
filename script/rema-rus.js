@@ -6,12 +6,6 @@ let point4 = document.getElementById('point4');
 let moreprojects = document.getElementById('moreprojects');
 let allprojects = document.querySelectorAll('.not-show-projects');
 
-let fname = document.getElementById('fname');
-let ftel = document.getElementById('fphone');
-let ftext = document.getElementById('ftext');
-let fbtn = document.getElementById('fbtn');
-
-
 if (points.offsetTop > 0) {
     window.onscroll = function() {
         if ((window.pageYOffset + 450) >= points.offsetTop) {
@@ -29,30 +23,7 @@ if (points.offsetTop > 0) {
 
 moreprojects.addEventListener("click", () => {
     allprojects.forEach((x) => {
-        // console.log(x);
         x.classList.remove('not-show-projects');
     });
     document.querySelector('.projects-more').classList.add('not-show-projects');
 });
-
-// fsend.onclick = function(e) {
-//     e.preventDefault();
-//     // console.log(fname, ftel, ftext);
-//     console.log('click');
-// };
-
-// document.getElementById('fsend').onclick = function(e) {
-//     e.preventDefault();
-//     // let telmail = document.getElementById('telmail').value;
-//     console.log('click');
-// }
-
-// fbtn.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     console.log('click');
-// });
-
-fbtn.onclick = function(e) {
-    e.preventDefault();
-    console.log('click');
-}

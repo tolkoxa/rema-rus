@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <title>REMA &#151; производство сортировочных комплексов с 2005г.</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>REMA &#8212; производство сортировочных комплексов с 2005г.</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="og:site_name" content="rema-rus.ru">
     <meta property="vk:image" content="http://rema-rus.ru/img/snippet-rema.png">
@@ -32,7 +32,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="text/javascript">
+        function doClear(theText) {
+            if (theText.value == theText.defaultValue) {
+                theText.value = ""
+            }
+        }
 
+        function doDefault(theText) {
+            if (theText.value == "") {
+                theText.value = theText.defaultValue
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -69,7 +81,7 @@
                         <p class="menu-inactive">Инжиниринг</p>
                     </div>
                     <div class="menu-style">
-                        <p class="menu-inactive">Обучение</p>
+                        <p class="menu-inactive">Образование и наука</p>
                     </div>
                     <div class="menu-style">
                         <a href="#m-projects" class="menu-link">Референсы</a>
@@ -391,13 +403,12 @@
                         </div>
                         <div class="news-item">
                             <div>
-                                <img class="news-img" src="img/news/news-03.jpg" alt="РЕМА на бизнес–бранче Общероссийского Движения Предпринимателей">
+                                <!-- <img class="news-img" src="img/news/news-03.jpg" alt="РЕМА на бизнес–бранче Общероссийского Движения Предпринимателей"> -->
+                                <iframe class="news-img" src="https://www.youtube.com/embed/sahIEQzAQns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div>
                                 <p class="news-date">15.08.2021</p>
-                                <p class="news-text">
-                                    РЕМА на бизнес–бранче <a href="https://www.youtube.com/watch?v=sahIEQzAQns">Общероссийского Движения Предпринимателей</a>.
-                                </p>
+                                <p class="news-text">РЕМА на бизнес–бранче Общероссийского Движения Предпринимателей.</p>
                             </div>
                         </div>
                         <div class="news-item">
@@ -424,12 +435,13 @@
                         </div>
                         <div class="news-item">
                             <div>
-                                <img class="news-img" src="img/news/news-06.jpg" alt="РЕМА на бизнес–бранче Общероссийского Движения Предпринимателей">
+                                <iframe class="news-img" src="https://www.youtube.com/embed/Jfrqq0fY0YM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <!-- <img class="news-img" src="img/news/news-06.jpg" alt="РЕМА на бизнес–бранче Общероссийского Движения Предпринимателей"> -->
                             </div>
                             <div>
                                 <p class="news-date">03.07.2020</p>
                                 <p class="news-text">
-                                    Доклад управляющего партнёра РЕМА Айны Кудряшовой на съезде Региональных Экологических Операторов в Железноводске «<a href="https://www.youtube.com/watch?v=Jfrqq0fY0YM">Инжиниринг в проектах высокой сложности</a>».
+                                    Доклад управляющего партнёра РЕМА Айны Кудряшовой на съезде Региональных Экологических Операторов в Железноводске «Инжиниринг в проектах высокой сложности».
                                 </p>
                             </div>
                         </div>
@@ -447,15 +459,16 @@
                     </div>
                 </div>
                 <div class="feedback">
-                    <h2 class="feedback-title">Задайте вопрос или опишите задачу, чтобы мы посчитали стоимость проекта и сроки его реализации</h2>
-                    <form class="feedback-form">
-                        <input class="feedback-input"></input>
-                        <input class="feedback-input"></input>
-                        <textarea class="feedback-texarea" name="" id="" cols="30" rows="10"></textarea>
+                    <div class="feedback-form">
+                        <h2 class="feedback-title">Задайте вопрос или опишите задачу, чтобы мы посчитали стоимость проекта и сроки его реализации</h2>
+
+                        <input class="feedback-input" value="Имя" inputmode="text" id="fname" onFocus="doClear(this)" onBlur="doDefault(this)"></input>
+                        <input class="feedback-input" value="Телефон/почта" inputmode="text" id="telmail" onFocus="doClear(this)" onBlur="doDefault(this)"></input>
+                        <textarea class="feedback-texarea" cols="30" rows="10" value="Текст сообщения" inputmode="text" id="ftext" onFocus="doClear(this)" onBlur="doDefault(this)">Текст сообщения</textarea>
                         <div class="feedback-button">
-                            <button class="feedback-btn">Отправить</button>
+                            <button class="feedback-btn" id="fbtn">Отправить</button>
                         </div>
-                    </form>
+                    </div>
                     <div class="feedback-info">
                         <div class="feedback-item">
                             <div class="feedback-contact">
@@ -496,7 +509,8 @@
             </footer>
         </div>
     </div>
-    <script src="js/rema-rus.js" defer></script>
+    <script src="script/rema-rus.js" defer></script>
+    <script src="script/send.js" defer></script>
 </body>
 
 </html>

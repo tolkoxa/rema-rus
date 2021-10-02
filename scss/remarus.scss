@@ -120,24 +120,26 @@ body {
         font-family: $font-main;
         color: $color-white;
         font-size: 2.3rem;
+        line-height: 120%;
         font-weight: 700;
+        padding: 20px 0 10px 0;
         text-transform: uppercase;
         text-align: center;
-        // width: 430px;
     }
     &-subtitle {
         font-family: $font-main;
         color: $color-white;
-        font-size: 1.6rem;
-        line-height: 1.3em;
-        font-weight: 700;
-        padding: 10px 0;
+        font-size: 1.7rem;
+        line-height: 125%;
+        font-weight: 600;
+        // padding: 10px 0;
+        padding-bottom: 20px;
     }
     &-text {
         font-family: $font-main;
         color: $color-white;
         font-size: 1.5rem;
-        line-height: 1.25em;
+        line-height: 125%;
         font-weight: 500;
         padding: 10px 0;
     }
@@ -337,7 +339,7 @@ body {
         // padding-bottom: 20px;
     }
     &-big-img {
-        width: 100%;
+        width: 98%;
         // width: 70%;
     }
     &-big-size {
@@ -355,8 +357,8 @@ body {
         align-content: space-between;
     }
     &-small-img {
-        width: 50%;
-        height: 50%;
+        width: 48%;
+        height: 49%;
         max-width: 315px;
         max-height: 208px;
     }
@@ -518,7 +520,7 @@ body {
         outline: none !important;
         padding: 5px 0 5px 10px;
         font-family: $font-main;
-        color: $color-black;
+        color: $color-blue;
         font-size: 2rem;
         font-weight: 400;
     }
@@ -531,7 +533,7 @@ body {
         outline: none !important;
         padding: 5px 0 5px 10px;
         font-family: $font-main;
-        color: $color-black;
+        color: $color-blue;
         font-size: 2rem;
         font-weight: 400;
     }
@@ -556,6 +558,17 @@ body {
         &:hover {
             cursor: pointer;
         }
+    }
+    &-after-send {
+        width: 80%;
+        height: 80px;
+        font-family: $font-main;
+        color: $color-black;
+        font-size: 2.8rem;
+        font-weight: 500;
+        // font-size: 3.8rem;
+        // font-weight: 600;
+        padding-top: 20px;
     }
     &-info {
         width: 80%;
@@ -642,8 +655,16 @@ body {
             display: none;
         }
     }
-    .feedback-text {
-        font-size: 1.6rem;
+    .feedback {
+        &-text {
+            font-size: 1.6rem;
+        }
+        &-after-send {
+            width: 80%;
+            height: 100px;
+            font-size: 2.6rem;
+            font-weight: 500;
+        }
     }
     .partners {
         &-item {
@@ -662,16 +683,17 @@ body {
     .video-no {
         display: none;
     }
-    // .notuse {
-    //     display: initial;
-    // }
     .header-menu {
         display: flex;
     }
     .about {
         flex-wrap: nowrap;
         &-title {
+            font-size: 3.3rem;
             text-align: left;
+        }
+        &-subtitle {
+            font-size: 2.0rem;
         }
         &-videos {
             text-align: right;
@@ -680,12 +702,23 @@ body {
     .d-video-no {
         display: initial;
     }
-    .feedback-info {
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    .feedback-item {
-        width: 50%;
+    .feedback {
+        &-info {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        &-item {
+            width: 50%;
+        }
+        &-after-send {
+            width: 80%;
+            height: 150px;
+            font-size: 3rem;
+            font-weight: 500;
+            // font-size: 3.8rem;
+            // font-weight: 600;
+            padding-top: 20px;
+        }
     }
     .points {
         display: flex;
